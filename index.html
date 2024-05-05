@@ -11,12 +11,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
-    integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookies/1.8.3/angular-cookies.min.js"
-    integrity="sha512-eM4WApD53FS2pv6fIgY4E2utWB82WSp3QPeoemIzA9VeOv9vQ1UzYBKIkXAwS71SCilEFpfkwtCZHj2uSS3keQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookies/1.8.3/angular-cookies.min.js"
+        integrity="sha512-eM4WApD53FS2pv6fIgY4E2utWB82WSp3QPeoemIzA9VeOv9vQ1UzYBKIkXAwS71SCilEFpfkwtCZHj2uSS3keQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Google Font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
@@ -38,339 +38,34 @@
 
 <body ng-app="app" ng-controller="homeController">
     <!-- Page Preloder -->
-   
 
-<div id="preloder">
-    <div class="loader"></div>
-  </div>
-  
-  <!-- Humberger Begin -->
-  <div class="humberger__menu__overlay"></div>
-  <div class="humberger__menu__wrapper">
-    <div class="humberger__menu__logo">
-        <a href="#"><img src="img/logo.png" alt=""></a>
-    </div>
-    <div class="humberger__menu__cart">
-        <ul>
-            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-        </ul>
-        <div class="header__cart__price">item: <span>$150.00</span></div>
-    </div>
-    <div class="humberger__menu__widget">
-        <div class="header__top__right__language">
-            <img src="img/language.png" alt="">
-            <div>English</div>
-            <span class="arrow_carrot-down"></span>
-            <ul>
-                <li><a href="#">Spanis</a></li>
-                <li><a href="#">English</a></li>
-            </ul>
-        </div>
-        <div class="header__top__right__auth">
-            <a href="#"><i class="fa fa-user"></i> Login</a>
-        </div>
-    </div>
-    <nav class="humberger__menu__nav mobile-menu">
-        <ul>
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./shop-grid.html">Shop</a></li>
-            <li><a href="#">Pages</a>
-                <ul class="header__menu__dropdown">
-                    <li><a href="./shop-details.html">Shop Details</a></li>
-                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                    <li><a href="./checkout.html">Check Out</a></li>
-                    <li><a href="./blog-details.html">Blog Details</a></li>
-                </ul>
-            </li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div id="mobile-menu-wrap"></div>
-    <div class="header__top__right__social">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-pinterest-p"></i></a>
-    </div>
-    <div class="humberger__menu__contact">
-        <ul>
-            <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-            <li>Free Shipping for all Order of $99</li>
-        </ul>
-    </div>
-  </div>
-  <!-- Humberger End -->
-  
-  <!-- Header Section Begin -->
-  <header class="header">
-    <div class="header__top">
+
+    <!-- header -->
+    <div ng-include="'header.html'"></div>
+
+    <!-- end header -->
+
+
+    <!-- body -->
+
+    <section class="youtube">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 " >
-                    <div class="header__top__left">
-                        <ul>
-                          <li><i class="fas fa-phone-alt" style="color: rgb(255, 255, 255);"></i> 0981.388.777 - (028)38.030.333</li>
-                                  <li><i class="fas fa-envelope" style="color: rgb(255, 255, 255);"></i> gaonuocthienan@gmail.com
-                                  </li>
-                                  <li><i class="fas fa-map-marker-alt" style="color: rgb(255, 255, 255);"></i> 581 Nguyễn Xiển,Long Thạnh Mỹ,Quận 9, Thành Phố Hồ Chí Minh</li>
-                              </ul>
-                          </div>
-                      </div>
-                      <!-- <div class="col-lg-2 col-md-2">
-                          <div class="header__top__right">
-                              <div class="header__top__right__social">
-                                  <a href="#"><i class="fa fa-facebook"></i></a>
-                                  <a href="#"><i class="fa fa-twitter"></i></a>
-                                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                                  <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                              </div>
-                              <div class="header__top__right__language">
-                                  <img src="img/language.png" alt="">
-                                  <div>English</div>
-                                  <span class="arrow_carrot-down"></span>
-                                  <ul>
-                                      <li><a href="#">Spanis</a></li>
-                                      <li><a href="#">English</a></li>
-                                  </ul>
-                              </div>
-                              <div class="header__top__right__auth">
-                                  <a href="#"><i class="fa fa-user"></i> Login</a>
-                              </div>
-                          </div>
-                      </div> -->
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-3">
-                      <div class="header__logo" style="text-align: center;">
-                          <a href="./index.html"><img src="img/logothienan/logo.jpg" width="40%" height="40%" alt=""></a>
-                      </div>
-                  </div>
-                  <div class="col-lg-9">
-                      <nav class="header__menu"style="text-align: center;">
-                          <a href=""><img src="img/logothienan/linhvat1.jpg" width="60px" height="100px" alt=""></a> 
-                          <ul class="d-inline-flex" >
-                              
-                              <li class="active"><a href="./index.html">Trang chủ</a></li>
-                              <li ><a href="./shop-grid.html">Giới thiệu</a></li>
-                              <li ><a href="#">Sản Phẩm</a>
-                                  <ul class="header__menu__dropdown">
-                                      <li><a href="./shop-details.html">Shop Details</a></li>
-                                      <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                      <li><a href="./checkout.html">Check Out</a></li>
-                                      <li><a href="./blog-details.html">Blog Details</a></li>
-                                  </ul>
-                              </li>
-                              <li><a href="./blog.html">Bản tin Thiên An</a></li>
-                              <li ><a href="./contact.html">Sức khỏe và gia đình</a></li>
-                             
-                          </ul>
-                          <a href=""><img src="img/logothienan/linhvat2.jpg" width="70px" height="90px" alt=""></a>
-                      </nav>
-                  </div>
-                 
-                     
-                 
-                  <!-- <div class="col-lg-3">
-                      <div class="header__cart">
-                          <ul>
-                              <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                              <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                          </ul>
-                          <div class="header__cart__price">item: <span>$150.00</span></div>
-                      </div>
-                  </div> -->
-              </div>
-              <div class="humberger__open">
-                  <i class="fa fa-bars"></i>
-              </div>
-          </div>
-      </header>
-      <!-- Header Section End -->
-  
-      <!-- Hero Section Begin -->
-      <section class="hero">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-3">
-                      <div class="hero__categories">
-                          <div class="hero__categories__all">
-                              
-                              <span>Danh mục sản phẩm</span>
-                          </div>
-                          <ul>
-                              <nav class="navbar navbar-expand-lg ">
-                                  <div class="container-fluid">
-                                  
-                                    
-                                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                                      <ul class="navbar-nav">
-                                          <li class="nav-item dropdown">
-                                              <div class="nav-link dropdown-toggle " href="#" id="navbarDarkDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                  <i class="fas fa-circle custom-icon"></i> Gạo Nếp Thiên An
-                                              </div>
-                                              <ul class="dropdown-menu dropdown-menu-dark" id="dropdown-menu1">
-                                                  <li><a class="dropdown-item" href="#"><i class="fas fa-circle custom-icon"></i> Gạo Tấm</a></li><li><a class="dropdown-item" href="#"><i class="fas fa-circle custom-icon"></i> Gạo Nếp</a></li>
-                                                  <li><a class="dropdown-item" href="#"><i class="fas fa-circle custom-icon"></i> Gạo Từ Thiện</a></li>
-                                              </ul>
-                                          </li>
-                                      </ul>
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                </nav>
-                                <nav class="navbar navbar-expand-lg ">
-                                  <div class="container-fluid">
-                                  
-                                    
-                                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                                      <ul class="navbar-nav">
-                                          <li class="nav-item dropdown"> 
-                                              <div class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false" onmouseover="showDropdown('dropdown-menu2')" onmouseout="hideDropdown('dropdown-menu2')">
-                                                  <i class="fas fa-circle custom-icon"></i> Nước Khoán Thiên An  
-                                              </div>
-                                              <ul class="dropdown-menu dropdown-menu-dark" id="dropdown-menu2">
-                                                  <li><a class="dropdown-item" href="#"><i class="fas fa-circle custom-icon"></i> Nước Lavie</a></li>
-                                                  <li><a class="dropdown-item" href="#"><i class="fas fa-circle custom-icon"></i> Nước Viva</a></li>
-                                                  <li><a class="dropdown-item" href="#"><i class="fas fa-circle custom-icon"></i> Nước Vĩnh Hảo</a></li>
-                                                  <li><a class="dropdown-item" href="#"><i class="fas fa-circle custom-icon"></i> Nước Lavie</a></li>
-                                                  <li><a class="dropdown-item" href="#"><i class="fas fa-circle custom-icon"></i> Nước Viva</a></li>
-                                                  <li><a class="dropdown-item" href="#"><i class="fas fa-circle custom-icon"></i> Nước Vĩnh Hảo</a></li>
-                                                  
-                                              </ul>
-                                          </li>
-                                      </ul>
-                                    </div>
-                                    
-                                  </div>
-                                  
-                                </nav>
-                              
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-lg-9"><div class="hero__search">
-                    <div class="hero__search__form">
-                       
-                        <form action="#">
-                          
-                            <input type="text" placeholder="Tìm kiếm sản phẩm">
-                            <button type="submit" class="site-btn">Tìm kiếm</button>
-                        </form>
-                    </div>
-                    <div class="hero__search__phone">
-                        <div class="hero__search__phone__icon">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="hero__search__phone__text">
-                            <h5>+65 11.188.888</h5>
-                            <span>support 24/7 time</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
-                    <div class="carousel-inner" >
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="img/logothienan/top_banner_0_1692617778.jpg"  class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="img/logothienan/top_banner_1_1694252079.jpg"  class="d-block w-100" alt="...">
-                        </div>
-                       
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-  </section>
-  <!-- Hero Section End -->
-  
-  <!-- Categories Section Begin -->
-  <section class="categories">
-    <div class="container">
-        <div class="row">
-            <div class="categories__slider owl-carousel" >
-                <div  >
-                   <img src="img/logothienan/bannermini1.jpg" height="140px" alt="">
-                </div>
-               
-                    <div >
-                        <img src="img/logothienan/bannermini2.jpg" height="140px"   alt="">
-                    </div>
-                    <div >
-                      <img src="img/logothienan/bannermini3.jpg" height="140px"  alt="">
-                   </div>
-                   
-                  
-               </div>
-           </div>
-       </div>
-   </section>
-  
-    <!-- <section class="categories">
-        <div class="container">
-            <div class="row">
-                <div class="categories__slider owl-carousel">
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
-                            <h5><a href="#">Fresh Fruit</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
-                            <h5><a href="#">Dried Fruit</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
-                            <h5><a href="#">Vegetables</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Categories Section End -->
-
-
-<!-- body -->
-
-<section class="youtube">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-               <img src="img/logothienan/z5410636376772_6c02b22f43997a040861da70d238a074.jpg
+                <div class="col-lg-6">
+                    <img src="img/logothienan/z5410636376772_6c02b22f43997a040861da70d238a074.jpg
                " alt="">
-            </div>
-            <div class="col-lg-6"><div class="hero__search">
-                <iframe width="100%" height="520" src="https://www.youtube.com/embed/17y53MnLq8Q" title="Thiên An tự hào nhà phân phối chính thức các sản phẩm gạo, nước của các doanh nghiệp uy tín tại VN" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          
-      </div>
-</section>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero__search">
+                        <iframe width="100%" height="520" src="https://www.youtube.com/embed/17y53MnLq8Q"
+                            title="Thiên An tự hào nhà phân phối chính thức các sản phẩm gạo, nước của các doanh nghiệp uy tín tại VN"
+                            frameborder="2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+    </section>
 
 
     <!-- Featured Section Begin -->
@@ -803,77 +498,7 @@
     <!-- Blog Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer__about">
-                        <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                        </div>
-                        <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
-                    <div class="footer__widget">
-                        <h6>Useful Links</h6>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">About Our Shop</a></li>
-                            <li><a href="#">Secure Shopping</a></li>
-                            <li><a href="#">Delivery infomation</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Our Sitemap</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Who We Are</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Innovation</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="footer__widget">
-                        <h6>Join Our Newsletter Now</h6>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
-                        <form action="#">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit" class="site-btn">Subscribe</button>
-                        </form>
-                        <div class="footer__widget__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer__copyright">
-                        <div class="footer__copyright__text">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                                template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
-                                    href="https://colorlib.com" target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
-                        </div>
-                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div ng-include="'footer.html'"></div>
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
@@ -891,7 +516,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
-<!-- <script>
+    <!-- <script>
     function showDropdown(menuId) {
     var dropdownMenu = document.getElementById(menuId);
     dropdownMenu.classList.add('show');
@@ -903,20 +528,26 @@ function hideDropdown(menuId) {
 }
 
 </script> -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('.dropdown').hover(
-        function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn();
-        },
-        function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut();
-        }
-    );
-});
-</script>
-</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown').hover(
+                function () {
+                    $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn();
+                },
+                function () {
+                    $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut();
+                }
+            );
+        });
+    </script>
+    </script>
+    <script>
+        let app = angular.module("app", ['ngRoute', 'ngCookies'])
+		app.controller("homeController", function ($scope, $rootScope, $http, $location) {
+
+        });
+    </script>
 </body>
 
 </html>
